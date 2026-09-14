@@ -9,7 +9,8 @@ Synchronizes the shared Neup repositories into the expected `.neup` folders.
 
 Run `npm run setup` to update only repositories whose local HEAD is not the
 latest commit on GitHub's `main` branch. Run `npm run setup -- force` (or
-`npm run setup force`) to replace all three folders with fresh shallow clones.
+`npm run setup force`) to replace all four repositories with fresh shallow clones.
+The development-domain repository is cloned directly into `.neup/core/domain`.
 
 ::end
 NEUP_DOCUMENTATION
@@ -67,6 +68,7 @@ mkdir -p -- "$NEUP_DIR"
 
 repositories=(
   "https://github.com/neupgroup/neup.core|$NEUP_DIR/core|neup.core"
+  "https://github.com/neupgroup/devdomain.setup|$NEUP_DIR/core/domain|devdomain.setup"
   "https://github.com/neupgroup/neup.logica|$NEUP_DIR/logica|neup.logica"
   "https://github.com/neupgroup/neup.react.components|$NEUP_DIR/components|neup.react.components"
 )

@@ -163,11 +163,11 @@ function MobileMenuList({ setMenuOpen, navLinks }: { setMenuOpen: (open: boolean
               exit={{ x: -20, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              {currentLevel.items.map(link => {
+              {currentLevel.items.map((link, index) => {
                 if (link.children && link.children.length > 0) {
                   return (
                     <button
-                      key={link.title}
+                      key={JSON.stringify([link.title, link.href, index])}
                       onClick={() => navigateForward(link)}
                       className="flex items-center justify-between w-full py-4 text-left border-b border-border/40 last:border-0 group"
                     >
@@ -185,7 +185,7 @@ function MobileMenuList({ setMenuOpen, navLinks }: { setMenuOpen: (open: boolean
                 }
                 return (
                   <Link
-                    key={link.href}
+                    key={JSON.stringify([link.title, link.href, index])}
                     href={link.href!}
                     className="block w-full min-w-0 whitespace-normal break-words py-4 text-foreground border-b border-border/40 last:border-0 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     onClick={() => setMenuOpen(false)}
@@ -565,9 +565,9 @@ export function HeaderV3({ initialIsManager = false, initialProfile, initialLink
                           <div className="grid grid-cols-[300px_1fr] gap-12">
                             {/* Column 1: Level 2 items */}
                             <div className="space-y-1">
-                              {menuChildren?.map(child => (
+                              {menuChildren?.map((child, index) => (
                                 <div
-                                  key={child.title}
+                                  key={JSON.stringify([child.title, child.href, index])}
                                   onMouseEnter={() => handleLevel2Hover(child.title)}
                                   className={cn(
                                     "px-4 py-3 rounded-lg transition-colors cursor-pointer",
@@ -612,9 +612,9 @@ export function HeaderV3({ initialIsManager = false, initialProfile, initialLink
 
                                       return (
                                         <div className="grid grid-cols-2 gap-6">
-                                          {activeItem.children?.map(subItem => (
+                                          {activeItem.children?.map((subItem, index) => (
                                             <Link
-                                              key={subItem.title}
+                                              key={JSON.stringify([subItem.title, subItem.href, index])}
                                               href={subItem.href || '#'}
                                               target={subItem.target}
                                               className="group block p-4 rounded-lg hover:bg-secondary/50 transition-colors"
@@ -646,9 +646,9 @@ export function HeaderV3({ initialIsManager = false, initialProfile, initialLink
                         // If there's only level 2, show horizontally
                         return (
                           <div className="grid grid-cols-4 gap-8">
-                            {menuChildren?.map(child => (
+                            {menuChildren?.map((child, index) => (
                               <Link
-                                key={child.title}
+                                key={JSON.stringify([child.title, child.href, index])}
                                 href={child.href || '#'}
                                 className="group block p-4 rounded-lg hover:bg-secondary/50 transition-colors"
                               >

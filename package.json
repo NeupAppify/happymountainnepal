@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "setup": "chmod +x ./setup.sh && ./setup.sh",
+    "prepare": "mkdir -p .neup && curl -fsSL https://raw.githubusercontent.com/neupgroup/guidelines/main/nextjs/setup.sh -o .neup/setup.sh && cd .neup && chmod +x ./setup.sh && ./setup.sh",
     "postinstall": "npm run setup",
     "prebuild": "npm run setup",
     "predev": "npm run setup",
 
-    "dev": "sudo next dev --turbopack --experimental-https --hostname dev.happymountainnepal.com --port 443",
+    "dev": "mkdir -p .neup && curl -fsSL https://raw.githubusercontent.com/neupgroup/guidelines/main/nextjs/setup.sh -o .neup/setup.sh && chmod +x .neup/setup.sh && sudo next dev --turbopack --experimental-https --hostname dev.happymountainnepal.com --port 443",
     "build": "next build",
     "start": "next start -p 4277",
     "lint": "next lint",

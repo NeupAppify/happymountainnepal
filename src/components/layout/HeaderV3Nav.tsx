@@ -28,9 +28,9 @@ export const HeaderV3Nav = ({ links, onLinkHover }: HeaderV3NavProps) => {
     return (
         <div className="relative">
             <nav className="flex items-center">
-                {links.map(link => (
+                {links.map((link, index) => (
                     <div
-                        key={link.title}
+                        key={JSON.stringify([link.title, link.href, index])}
                         className="relative"
                         onMouseEnter={() => {
                             setHoveredItem(link.title);
