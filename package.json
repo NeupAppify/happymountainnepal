@@ -8,7 +8,7 @@
     "prebuild": "npm run setup",
     "predev": "npm run setup",
 
-    "dev": "next dev --turbopack --experimental-https --port 4277",
+    "dev": "sudo next dev --turbopack --experimental-https --hostname dev.happymountainnepal.com --port 443",
     "build": "next build",
     "start": "next start -p 4277",
     "lint": "next lint",

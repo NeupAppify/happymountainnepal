@@ -14,8 +14,8 @@ export function Itinerary({ items }: ItineraryProps) {
   return (
     <div>
       <Accordion type="single" collapsible className="w-full bg-card rounded-lg shadow-sm px-6">
-        {items.map((item) => (
-          <AccordionItem key={item.day} value={`item-${item.day}`}>
+        {items.map((item, index) => (
+          <AccordionItem key={`item-${item.day}-${index}`} value={`item-${item.day}-${index}`}>
             <AccordionTrigger>
               <div className="flex items-center gap-4">
                 <span className="text-primary font-bold">Day {item.day}</span>

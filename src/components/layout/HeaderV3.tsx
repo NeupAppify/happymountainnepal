@@ -6,7 +6,7 @@ import { LinkButton } from "@neup/components/ui/link-button";
 import { Link } from "@neup/components/ui/link";
 import Image from 'next/image';
 import { Mountain, Search, Menu, X, ChevronDown, ChevronRight, Phone, Mail, MapPin, Edit } from 'lucide-react';
-import { Button } from '@neup/components/ui/button';
+import { Button, buttonVariants } from '@neup/components/ui/button';
 import { HeaderV3Nav, type NavLink } from './HeaderV3Nav';
 import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -141,6 +141,7 @@ function MobileMenuList({ setMenuOpen, navLinks }: { setMenuOpen: (open: boolean
         <div className="flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
             <button
+              aria-label="Back to previous menu"
               onClick={navigateBack}
               className="flex items-center text-primary hover:text-primary/80 transition-colors"
             >
@@ -170,7 +171,7 @@ function MobileMenuList({ setMenuOpen, navLinks }: { setMenuOpen: (open: boolean
                       onClick={() => navigateForward(link)}
                       className="flex items-center justify-between w-full py-4 text-left border-b border-border/40 last:border-0 group"
                     >
-                      <div>
+                      <div className="min-w-0 break-words">
                         <span className="font-headline text-lg font-medium text-foreground group-hover:text-primary transition-colors">
                           {link.title}
                         </span>
@@ -178,22 +179,22 @@ function MobileMenuList({ setMenuOpen, navLinks }: { setMenuOpen: (open: boolean
                           <p className="text-sm text-muted-foreground mt-1">{link.description}</p>
                         )}
                       </div>
-                      <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground group-hover:text-primary transition-colors" />
                     </button>
                   );
                 }
                 return (
-                  <LinkButton
+                  <Link
                     key={link.href}
                     href={link.href!}
-                    className="block py-4 border-b border-border/40 last:border-0 hover:text-primary transition-colors"
+                    className="block w-full min-w-0 whitespace-normal break-words py-4 text-foreground border-b border-border/40 last:border-0 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     onClick={() => setMenuOpen(false)}
                   >
                     <span className="font-headline text-lg font-medium">{link.title}</span>
                     {link.description && (
                       <p className="text-sm text-muted-foreground mt-1">{link.description}</p>
                     )}
-                  </LinkButton>
+                  </Link>
                 );
               })}
             </motion.div>
@@ -201,18 +202,22 @@ function MobileMenuList({ setMenuOpen, navLinks }: { setMenuOpen: (open: boolean
 
           {navigationStack.length === 1 && (
             <div className="mt-8 pt-8 border-t flex flex-col gap-3">
-              <Button variant="outline" className="w-full justify-start text-lg h-12" asChild>
-                <a href={`mailto:${profile?.contactEmail || ''}`}>
-                  <Mail className="w-5 h-5 mr-2" />
-                  <span className="ml-2">Email Now</span>
-                </a>
-              </Button>
-              <Button className="w-full justify-start text-lg h-12" asChild>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                  <Image src="/whatsapp.svg" alt="WhatsApp" width={20} height={20} />
-                  <span className="ml-2">Contact Now</span>
-                </a>
-              </Button>
+              <a
+                href={`mailto:${profile?.contactEmail || ''}`}
+                className={buttonVariants({ variant: 'outlined', alignment: 'left', className: 'w-full min-h-12 h-auto whitespace-normal text-lg' })}
+              >
+                <Mail aria-hidden="true" />
+                <span>Email Now</span>
+              </a>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonVariants({ variant: 'solid', alignment: 'left', className: 'w-full min-h-12 h-auto whitespace-normal text-lg' })}
+              >
+                <Phone aria-hidden="true" />
+                <span>Contact Now</span>
+              </a>
             </div>
           )}
         </nav>
@@ -440,7 +445,7 @@ export function HeaderV3({ initialIsManager = false, initialProfile, initialLink
             <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
               {managerEditTarget ? (
                 <LinkButton
-                  variant="outline"
+                  variant="outlined"
                   size="sm"
                   className="h-9 px-3 border-primary/20 hover:border-primary hover:bg-primary/5 hover:text-foreground transition-all group/edit"
                  href={managerEditTarget}>
@@ -449,30 +454,24 @@ export function HeaderV3({ initialIsManager = false, initialProfile, initialLink
                   </LinkButton>
               ) : (
                 <>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="h-9 px-3 border-primary/20 hover:border-primary hover:bg-primary/5 hover:text-foreground transition-all group/contact"
+                  <a
+                    href={`mailto:${profile?.contactEmail || ''}`}
+                    className={buttonVariants({ variant: 'outlined', size: 'sm', className: 'border-primary/20 hover:border-primary hover:bg-primary/5 hover:text-foreground group/contact' })}
                   >
-                    <a href={`mailto:${profile?.contactEmail || ''}`} className="flex items-center gap-2">
-                      <Mail className="h-4 w-4 text-primary group-hover/contact:scale-110 transition-transform" />
-                      <span className="hidden sm:inline text-sm font-medium">Email Us</span>
-                      <span className="sm:hidden text-sm font-medium">Email now</span>
-                    </a>
-                  </Button>
+                    <Mail aria-hidden="true" className="text-primary group-hover/contact:scale-110 transition-transform" />
+                    <span className="hidden sm:inline text-sm font-medium">Email Us</span>
+                    <span className="sm:hidden text-sm font-medium">Email now</span>
+                  </a>
 
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="h-9 px-3 border-primary/20 hover:border-primary hover:bg-primary/5 hover:text-foreground transition-all group/contact"
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={buttonVariants({ variant: 'outlined', size: 'sm', className: 'border-primary/20 hover:border-primary hover:bg-primary/5 hover:text-foreground group/contact' })}
                   >
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Image src="/whatsapp.svg" alt="WhatsApp" width={16} height={16} className="shrink-0 group-hover/contact:scale-110 transition-transform" />
-                      <span className="text-sm font-medium">Contact now</span>
-                    </a>
-                  </Button>
+                    <Phone aria-hidden="true" className="group-hover/contact:scale-110 transition-transform" />
+                    <span className="text-sm font-medium">Contact now</span>
+                  </a>
                 </>
               )}
             </div>
@@ -482,8 +481,10 @@ export function HeaderV3({ initialIsManager = false, initialProfile, initialLink
             {/* Mobile Only Burger (With Morphing Animation) */}
             <div className="md:hidden">
               <Button
-                variant="ghost"
+                variant="plain"
                 size="icon"
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMenuOpen}
                 onClick={() => setMenuOpen(!isMenuOpen)}
                 className="relative overflow-hidden border-2 border-border hover:border-primary transition-colors"
               >
