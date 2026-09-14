@@ -4,13 +4,13 @@ import { useEffect, useState, useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
-import { Form } from '@/components/ui/form';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Form } from '@neup/components/ui/form';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { RichTextEditor } from '@/components/ui/RichTextEditor';
 import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { usePathname } from 'next/navigation';
 import { fetchLegalContent, updateLegalContentAction } from '../actions';
 

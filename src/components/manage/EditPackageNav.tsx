@@ -1,6 +1,6 @@
 
 'use client';
-import { LinkButton } from '@/components/ui/link-button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import { cn } from '@/lib/utils';
 import { Send } from 'lucide-react';
 

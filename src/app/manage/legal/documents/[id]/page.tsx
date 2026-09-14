@@ -3,17 +3,17 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { use } from 'react'; // React 19 equivalent of unwrapping params
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@neup/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Input } from '@neup/components/ui/input';
+import { Textarea } from '@neup/components/ui/textarea';
+import { Label } from '@neup/components/ui/label';
 import { getLegalDocumentById, updateLegalDocument } from '@/lib/db';
 import type { LegalDocument } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2, ArrowLeft, Save, Upload as UploadIcon, FileText, Eye, EyeOff } from 'lucide-react';
-import { Switch } from '@/components/ui/switch';
-import { LinkButton } from "@/components/ui/link-button";
+import { Switch } from '@neup/components/ui/switch';
+import { LinkButton } from "@neup/components/ui/link-button";
 import { cn } from '@/lib/utils';
 
 export default function EditLegalDocumentPage({ params }: { params: Promise<{ id: string }> }) {

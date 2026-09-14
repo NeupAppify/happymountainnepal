@@ -1,8 +1,8 @@
 'use client';
 
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@neup/components/ui/card";
 import { FileText, Gavel, ShieldCheck } from "lucide-react";
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 
 const legalPages = [
     {

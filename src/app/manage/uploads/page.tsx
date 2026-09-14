@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { UploadsContent } from './UploadsContent';
-import { Card } from '@/components/ui/card';
+import { Card } from '@neup/components/ui/card';
 
 function UploadsLoadingFallback() {
   return (

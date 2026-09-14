@@ -1,11 +1,11 @@
 'use client';
 
 import * as React from 'react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Link } from "@/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
 import { Mountain, Search, User, Menu } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Button } from '@neup/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@neup/components/ui/sheet';
 import { HeaderV2Nav, type NavLink, MobileNavLink } from './HeaderV2Nav';
 import { usePathname } from 'next/navigation';
 

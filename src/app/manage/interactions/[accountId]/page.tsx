@@ -2,7 +2,7 @@
 'use client';
 
 import { useEffect, useState, use } from 'react';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { getLogsByIdentifier } from '@/lib/db';
 import { classifyUserAgent, normalizeStoredReferrerSource } from '@/lib/log-classification';
 import type { Log } from '@/lib/types';
@@ -13,19 +13,19 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from '@neup/components/ui/table';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+} from '@neup/components/ui/card';
+import { Badge } from '@neup/components/ui/badge';
 import { formatDistanceToNow } from 'date-fns';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { Activity as ActivityIcon, ArrowLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 
 type ActivityPageProps = {
     params: Promise<{

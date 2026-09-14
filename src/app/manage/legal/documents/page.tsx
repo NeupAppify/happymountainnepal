@@ -5,17 +5,17 @@ import { useState, useEffect } from 'react';
 import {
   Card,
   CardContent,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+} from "@neup/components/ui/card";
+import { Button } from "@neup/components/ui/button";
 import { getLegalDocuments, getLegalSettings, updateLegalSettings, updateLegalDocumentsOrder } from '@/lib/db';
 import type { LegalDocument } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
 import { Upload as UploadIcon, Plus, ChevronRight, ShieldCheck, GripVertical } from 'lucide-react';
-import { Link } from "@/components/ui/link";
-import { Switch } from "@/components/ui/switch";
+import { Link } from "@neup/components/ui/link";
+import { Switch } from "@neup/components/ui/switch";
 import { Reorder, useDragControls } from "framer-motion";
 import { useRef } from 'react';
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@neup/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 function DraggableDocumentCard({ doc, isLast }: { doc: LegalDocument; isLast: boolean }) {

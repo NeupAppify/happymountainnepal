@@ -3,14 +3,14 @@
 
 import { BlogCard } from '@/components/BlogCard';
 import type { BlogPost } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { ChevronLeft, ChevronRight, Search, X } from 'lucide-react';
 import { useDebounce } from '@/hooks/use-debounce';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Input } from '@neup/components/ui/input';
+import { Badge } from '@neup/components/ui/badge';
 
 const ITEMS_PER_PAGE = 12;
 

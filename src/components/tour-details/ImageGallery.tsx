@@ -2,7 +2,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { Grid, Maximize } from 'lucide-react';
 import { ImageViewerDialog } from './ImageViewerDialog';
 import { cn } from '@/lib/utils';

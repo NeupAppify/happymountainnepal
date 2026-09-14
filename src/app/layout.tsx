@@ -1,8 +1,9 @@
 
 import type { Metadata } from 'next';
-import { cookies } from 'next/headers';
+import { cookies, headers } from 'next/headers';
+import { getAnalyticsContext, logPageActivity } from '../analytics';
 import './globals.css';
-import { Toaster } from '#/components/ui/toast';
+import { Toaster } from '@neup/components/ui/toast';
 import { WishlistProvider } from '@/context/WishlistContext';
 import { ProgressBar } from '@/components/layout/ProgressBar';
 import { HeaderV3 as Header } from '@/components/layout/HeaderV3';
@@ -34,6 +35,11 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { contextId, signedContextId } = await getAnalyticsContext();
+  const requestHeaders = await headers();
+  const pagePath = requestHeaders.get('x-invoke-path') ?? requestHeaders.get('next-url') ?? '/';
+  await logPageActivity(contextId, pagePath);
+
   const cookieStore = await cookies();
   const isManager = cookieStore.has('manager_username');
 
@@ -69,14 +75,6 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-        <script
-          async
-          src="https://localhost:26259/analytics/bridge/sdk.v1/record"
-          data-project-id="cmt1ve8im0000gc9kgleao4wh"
-          data-endpoint="https://localhost:26259/analytics/bridge/api.v1/activity?project=cmt1ve8im0000gc9kgleao4wh"
-          data-mode="activity"
-          data-collect="pageview,requests"
-        />
       </head>
       <body className="font-body antialiased">
         <ProgressBar />
@@ -97,6 +95,15 @@ export default async function RootLayout({
           {/* Chatbot removed from here, will be added to specific pages */}
           <Toaster />
         </WishlistProvider>
+        <script
+          src="https://neupgroup.com/analytics/bridge/sdk.v1/tracker"
+          data-context-id={signedContextId}
+          data-project-id="cmt1ve8im0000gc9kgleao4wh"
+          data-collect="pageview"
+          data-cookie-keys={"[]"}
+          data-server-fields={JSON.stringify({})}
+          defer
+        />
       </body>
     </html>
   );

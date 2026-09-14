@@ -6,19 +6,19 @@ import { Slot } from "@radix-ui/react-slot"
 import { VariantProps, cva } from "class-variance-authority"
 import { PanelLeft } from "lucide-react"
 
-import { cn } from "#/core/utils"
-import { useIsMobile } from "#/core/hooks/useMobile"
-import { Input } from "#/components/ui/input"
-import { NavButton } from "#/components/ui/navbutton"
-import { Separator } from "#/components/ui/separator"
-import { Sheet, SheetContent } from "#/components/ui/sheet"
-import { Skeleton } from "#/components/ui/skeleton"
+import { cn } from "@neup/core/utils"
+import { useIsMobile } from "@neup/core/hooks/useMobile"
+import { Input } from "@neup/components/ui/input"
+import { NavButton } from "@neup/components/ui/navbutton"
+import { Separator } from "@neup/components/ui/separator"
+import { Sheet, SheetContent } from "@neup/components/ui/sheet"
+import { Skeleton } from "@neup/components/ui/skeleton"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "#/components/ui/tooltip"
+} from "@neup/components/ui/tooltip"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7

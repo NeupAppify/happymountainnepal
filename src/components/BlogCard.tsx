@@ -1,8 +1,8 @@
 'use client';
 
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import Image from 'next/image';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@neup/components/ui/card';
 import type { BlogPost } from '@/lib/types';
 
 interface BlogCardProps {

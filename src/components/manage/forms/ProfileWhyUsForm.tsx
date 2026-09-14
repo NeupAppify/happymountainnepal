@@ -4,7 +4,7 @@
 import { useForm, FormProvider, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   Form,
   FormControl,
@@ -12,20 +12,20 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { logError } from '@/lib/db';
 import { updateSiteProfileAction } from '@/app/actions/profile';
 import { useTransition, useEffect } from 'react';
 import { Loader2, PlusCircle, Trash2, Save, ArrowLeft } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePathname } from 'next/navigation';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Textarea } from '@/components/ui/textarea';
+import { Skeleton } from '@neup/components/ui/skeleton';
+import { Textarea } from '@neup/components/ui/textarea';
 import { useSiteProfile } from '@/hooks/use-site-profile';
 import { MediaPicker } from '../MediaPicker';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 
 const whyUsSchema = z.object({
   icon: z.string().url("Icon URL must be a valid URL."),

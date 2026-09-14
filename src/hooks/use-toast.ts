@@ -1,6 +1,6 @@
 "use client"
-import type { ToastInput as NeupToastInput } from "#/core/hooks/useToast"
-import { useToast as useNeupToast, toast as neupToast } from "#/core/hooks/useToast"
+import type { ToastInput as NeupToastInput } from "@neup/core/hooks/useToast"
+import { useToast as useNeupToast, toast as neupToast } from "@neup/core/hooks/useToast"
 
 type LegacyToastInput = Omit<NeupToastInput, "name" | "state" | "convey"> & {
   variant?: "default" | "destructive"

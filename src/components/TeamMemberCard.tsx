@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
-import { Link } from "@/components/ui/link";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Link } from "@neup/components/ui/link";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@neup/components/ui/card';
 import type { TeamMember } from '@/lib/types';
 import { cn } from '@/lib/utils';
 

@@ -1,11 +1,11 @@
 
 'use client';
 
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
 import { useSiteProfile } from '@/hooks/use-site-profile';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import type { SiteProfile } from '@/lib/types';
 
 export function ContactSection({ initialProfile }: { initialProfile?: SiteProfile | null }) {

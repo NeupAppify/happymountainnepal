@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Card, CardContent } from '@/components/ui/card';
+import { Skeleton } from '@neup/components/ui/skeleton';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { ManagePackagesContent } from '../ManagePackagesContent';
 
 function ManagePackagesLoadingFallback() {

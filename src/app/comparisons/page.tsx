@@ -1,7 +1,7 @@
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@neup/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { trekComparisons } from "@/lib/growth-content";
 
 export default function ComparisonsPage() {

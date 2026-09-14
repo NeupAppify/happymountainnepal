@@ -3,8 +3,8 @@
 import { GearItem } from '@/lib/types';
 import { Check, Info, Backpack, CircleCheck } from 'lucide-react';
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@neup/components/ui/card';
+import { Badge } from '@neup/components/ui/badge';
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 

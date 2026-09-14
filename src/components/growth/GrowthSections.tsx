@@ -1,5 +1,5 @@
-import { LinkButton } from "@/components/ui/link-button";
-import { Link } from "@/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
 import Image from "next/image";
 import {
   ArrowRight,
@@ -15,10 +15,10 @@ import {
   Users,
 } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "@neup/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
+import { Badge } from "@neup/components/ui/badge";
+import { Separator } from "@neup/components/ui/separator";
 import type { ManagedReview, SiteProfile, TeamMember, Tour } from "@/lib/types";
 import {
   clientStories,

@@ -3,16 +3,16 @@
 import { useFormContext, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
     Form,
     FormControl,
     FormField,
     FormItem,
     FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { type Tour, type BlogPost, type GuideItem } from '@/lib/types';
 import { updateTour, logError } from '@/lib/db';
 import { useTransition, useState } from 'react';
@@ -20,8 +20,8 @@ import { Loader2, PlusCircle, Trash2, RefreshCw, BookOpen, ExternalLink } from '
 import { useToast } from '@/hooks/use-toast';
 import { usePathname } from 'next/navigation';
 import { v4 as uuidv4 } from 'uuid';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@neup/components/ui/dialog';
+import { Checkbox } from '@neup/components/ui/checkbox';
 import Image from 'next/image';
 
 const guideItemSchema = z.object({

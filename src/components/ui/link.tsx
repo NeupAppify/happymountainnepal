@@ -2,7 +2,7 @@
 
 import NextLink from 'next/link';
 import type { AnchorHTMLAttributes, ReactNode } from 'react';
-import { APP_BASE_PATH } from '#/core/appconfig';
+import { APP_BASE_PATH } from '@neup/core/appconfig';
 
 type LinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> & {
   takesTo?: string;

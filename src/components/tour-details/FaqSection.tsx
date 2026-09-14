@@ -7,7 +7,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@neup/components/ui/accordion";
 
 interface FaqSectionProps {
   faq: Tour['faq'];

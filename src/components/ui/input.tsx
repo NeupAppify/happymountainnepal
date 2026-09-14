@@ -4,7 +4,7 @@
 
 import * as React from "react"
 
-import { cn } from "#/core/utils"
+import { cn } from "@neup/core/utils"
 
 export type InputValidation =
   | "email"

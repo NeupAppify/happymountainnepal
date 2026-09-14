@@ -3,7 +3,7 @@
 import { useForm, FormProvider, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   Form,
   FormControl,
@@ -11,10 +11,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Card, CardContent } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Textarea } from '@neup/components/ui/textarea';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { type ManagedReview, OnSiteReview, OffSiteReview } from '@/lib/types';
 import { addReview, updateReview, logError, getAllToursForSelect } from '@/lib/db';
 import { useTransition, useState, useEffect } from 'react';
@@ -28,14 +28,14 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Calendar } from '@/components/ui/calendar';
+} from "@neup/components/ui/select";
+import { RadioGroup, RadioGroupItem } from '@neup/components/ui/radio-group';
+import { Popover, PopoverContent, PopoverTrigger } from '@neup/components/ui/popover';
+import { Calendar } from '@neup/components/ui/calendar';
 import { cn } from '@/lib/utils';
 import { format } from 'date-fns';
-import { Slider } from '@/components/ui/slider';
-import { Label } from '@/components/ui/label';
+import { Slider } from '@neup/components/ui/slider';
+import { Label } from '@neup/components/ui/label';
 
 const formSchema = z.object({
   type: z.enum(['onSite', 'offSite'], { required_error: "Review type is required." }),

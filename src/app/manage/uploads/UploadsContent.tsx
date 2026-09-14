@@ -8,17 +8,17 @@ import { getFileUploads, deleteFileUpload } from '@/lib/db';
 import { UploadDialog } from '@/components/upload/UploadDialog';
 import { formatDistanceToNow } from 'date-fns';
 import { PictureInPicture, ChevronLeft, ChevronRight, Trash2, Plus, Link as LinkIcon, Upload, Search } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { Link } from "@/components/ui/link";
-import { Button } from '@/components/ui/button';
+import { Badge } from '@neup/components/ui/badge';
+import { Link } from "@neup/components/ui/link";
+import { Button } from '@neup/components/ui/button';
 import type { FileUpload } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
 import { SmartImage } from '@/components/ui/smart-image';
-import { Card } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
+import { Card } from '@neup/components/ui/card';
+import { Separator } from '@neup/components/ui/separator';
 import { cn } from '@/lib/utils';
-import { Input } from '@/components/ui/input';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@neup/components/ui/input';
+import { Checkbox } from '@neup/components/ui/checkbox';
 
 const ITEMS_PER_PAGE = 10;
 

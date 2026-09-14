@@ -10,7 +10,7 @@ import {
   X,
 } from 'lucide-react'
 
-import { cn } from '#/core/utils'
+import { cn } from '@neup/core/utils'
 
 import {
   TOAST_EXIT_DURATION,
@@ -18,12 +18,12 @@ import {
   type ToastState,
   type ToastConvey,
   type ToasterToast,
-} from '#/core/hooks/useToast'
+} from '@neup/core/hooks/useToast'
 
 import {
   Button,
   type ButtonProps,
-} from '#/components/ui/button'
+} from '@neup/components/ui/button'
 
 /*
 |--------------------------------------------------------------------------

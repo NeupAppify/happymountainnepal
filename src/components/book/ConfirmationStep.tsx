@@ -1,8 +1,8 @@
 
 'use client';
 
-import { LinkButton } from '@/components/ui/link-button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '#/components/ui/card';
+import { LinkButton } from '@neup/components/ui/link-button';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@neup/components/ui/card';
 import { CheckCircle2 } from 'lucide-react';
 
 export function ConfirmationStep() {

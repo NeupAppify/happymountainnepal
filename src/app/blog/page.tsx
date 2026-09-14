@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { BlogContent } from './BlogContent';
 import { getPosts } from '@/lib/db/sqlite';
 

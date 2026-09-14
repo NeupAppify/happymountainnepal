@@ -1,8 +1,8 @@
 'use client';
 import type { ManagedReview } from '@/lib/types';
-import { LinkButton } from '@/components/ui/link-button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import { ArrowRight } from 'lucide-react';
-import { Skeleton } from '#/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useState, useEffect } from 'react';
 import { getFiveStarReviews } from '@/lib/db/reviews';
 import { useSiteProfile } from '@/hooks/use-site-profile';
@@ -12,10 +12,10 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "#/components/ui/carousel"
+} from "@neup/components/ui/carousel"
 import { ReviewCarouselItem } from './ReviewCarouselItem'; // New component for the card
 import Autoplay from "embla-carousel-autoplay"
-import { Card, CardContent } from '#/components/ui/card'; // Added import
+import { Card, CardContent } from '@neup/components/ui/card'; // Added import
 
 export function Testimonials({ initialReviews = [], initialProfile }: { initialReviews?: ManagedReview[], initialProfile?: any }) {
   const [reviews, setReviews] = useState<ManagedReview[]>(initialReviews);

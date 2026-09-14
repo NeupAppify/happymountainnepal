@@ -5,12 +5,12 @@ import { getFeedbacks, Feedback } from '@/lib/db';
 import { getTeamMembers } from '@/lib/db/team';
 import type { TeamMember } from '@/lib/types';
 import { formatDistanceToNow } from 'date-fns';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@neup/components/ui/card';
 import { Plus, Calendar, CheckCircle2, Circle, AlertCircle } from 'lucide-react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Badge } from '@neup/components/ui/badge';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 
 export default function FeedbacksPage() {
     const [feedbacks, setFeedbacks] = useState<Feedback[]>([]);

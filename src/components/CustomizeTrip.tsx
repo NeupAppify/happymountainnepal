@@ -1,5 +1,5 @@
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 

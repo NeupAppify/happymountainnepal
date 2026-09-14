@@ -2,11 +2,11 @@
 'use client';
 
 import * as React from 'react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Link } from "@/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
 import Image from 'next/image';
 import { Mountain, Search, Menu, X, ChevronDown, ChevronRight, Phone, Mail, MapPin, Edit } from 'lucide-react';
-import { Button } from '#/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { HeaderV3Nav, type NavLink } from './HeaderV3Nav';
 import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'framer-motion';

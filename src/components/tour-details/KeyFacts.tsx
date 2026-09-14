@@ -1,6 +1,6 @@
 
 import type { Tour } from '@/lib/types';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { Clock, BarChart, Globe, Mountain } from 'lucide-react';
 
 interface KeyFactsProps {

@@ -4,8 +4,8 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getAllTourRegions } from '@/lib/db';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Card } from '@/components/ui/card';
+import { Skeleton } from '@neup/components/ui/skeleton';
+import { Card } from '@neup/components/ui/card';
 import { MapPin } from 'lucide-react';
 import { slugify } from '@/lib/utils';
 import Image from 'next/image';

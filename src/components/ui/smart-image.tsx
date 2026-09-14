@@ -1,4 +1,4 @@
-import { Link } from "@/components/ui/link"; // Not strictly used here but kept imports similar? No, remove unused.
+import { Link } from "@neup/components/ui/link"; // Not strictly used here but kept imports similar? No, remove unused.
 import Image, { ImageProps } from 'next/image';
 import { useSiteProfile } from '@/hooks/use-site-profile';
 import { resolveUrlTemplates } from '@/lib/url-utils';

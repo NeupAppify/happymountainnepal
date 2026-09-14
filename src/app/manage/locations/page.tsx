@@ -1,8 +1,8 @@
 
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import { PlusCircle, MapPin, Search } from 'lucide-react';
 import { getLocations } from '@/lib/db/sqlite';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { LocationManagementCard } from '@/components/manage/LocationManagementCard';
 
 export const dynamic = 'force-dynamic';

@@ -6,7 +6,7 @@ import type { Tour } from '@/lib/types';
 import { TourCard } from '@/components/TourCard';
 import { MinimalTourFilters } from '@/components/MinimalTourFilters';
 import { Mountain } from 'lucide-react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { CardsGrid } from '@/components/CardsGrid';
 
 const hardshipToDifficulties: Record<string, string[]> = {

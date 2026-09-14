@@ -1,20 +1,20 @@
 
 'use client';
 
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import type { BlogPost } from '@/lib/types';
-import { Button } from '#/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { MoreHorizontal, Trash2 } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '#/components/ui/dropdown-menu';
+} from '@neup/components/ui/dropdown-menu';
 import { DeleteBlogPostDialog } from './DeleteBlogPostDialog';
-import { Badge } from '#/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 import { Timestamp } from '@/lib/timestamp';
-import { Card, CardContent } from '#/components/ui/card';
+import { Card, CardContent } from '@neup/components/ui/card';
 import Image from 'next/image';
 
 interface BlogTableRowProps {

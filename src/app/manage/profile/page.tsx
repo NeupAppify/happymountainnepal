@@ -1,10 +1,10 @@
 'use client';
 
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { useSiteProfile } from "@/hooks/use-site-profile";
 import { Image, Info, Share2, ThumbsUp, ArrowRight, AlertCircle } from "lucide-react";
-import { Link } from "@/components/ui/link";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Link } from "@neup/components/ui/link";
+import { Skeleton } from "@neup/components/ui/skeleton";
 
 export default function ProfilePage() {
   const { profile, isLoading, error } = useSiteProfile();

@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { LogsContent } from './LogsContent';
 
 function LogsLoadingFallback() {

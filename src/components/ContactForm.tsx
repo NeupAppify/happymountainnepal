@@ -4,7 +4,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Button } from "@/components/ui/button";
+import { Button } from "@neup/components/ui/button";
 import {
   Form,
   FormControl,
@@ -12,10 +12,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent } from "@/components/ui/card";
+} from "@neup/components/ui/form";
+import { Input } from "@neup/components/ui/input";
+import { Textarea } from "@neup/components/ui/textarea";
+import { Card, CardContent } from "@neup/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { useEffect, useTransition } from "react";
 import { Loader2 } from "lucide-react";

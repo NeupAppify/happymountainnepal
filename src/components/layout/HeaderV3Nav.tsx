@@ -2,7 +2,7 @@
 'use client';
 
 import * as React from 'react';
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { ChevronRight } from 'lucide-react';

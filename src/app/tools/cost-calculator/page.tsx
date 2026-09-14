@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@neup/components/ui/badge";
 import { TrekCostCalculator } from "@/components/growth/TrekCostCalculator";
 import { getAllPublishedTours } from "@/lib/db/tours";
 

@@ -1,13 +1,13 @@
 
 'use client';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
+} from '@neup/components/ui/card';
 import {
   Table,
   TableBody,
@@ -15,14 +15,14 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from '@neup/components/ui/table';
 import { formatDistanceToNow } from 'date-fns';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 import { ArrowRight, ShieldAlert } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { useState, useEffect } from 'react';
 import type { SiteError } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { getErrors } from '@/lib/db/errors';
 
 export default function ErrorsPage() {

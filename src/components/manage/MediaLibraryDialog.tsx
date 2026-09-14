@@ -6,20 +6,20 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+} from '@neup/components/ui/dialog';
+import { Button } from '@neup/components/ui/button';
+import { Input } from '@neup/components/ui/input';
 import { Loader2, Search, Image as ImageIcon, CheckCircle2, FileText, Trash2, ExternalLink, X, Filter, LayoutTemplate, User } from 'lucide-react';
 import { getFileUploads, deleteFileUpload } from '@/lib/db';
 import type { FileUpload, ImageWithCaption } from '@/lib/types';
 import { SmartImage } from '@/components/ui/smart-image';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { ScrollArea } from '@neup/components/ui/scroll-area';
 import { useSiteProfile } from '@/hooks/use-site-profile';
 import { getFullUrl } from '@/lib/url-utils';
-import { LinkButton } from "@/components/ui/link-button";
-import { Badge } from '@/components/ui/badge';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Badge } from '@neup/components/ui/badge';
 
 interface MediaLibraryDialogProps {
   isOpen: boolean;

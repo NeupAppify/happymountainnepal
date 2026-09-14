@@ -4,10 +4,10 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { getPartnersAction } from '@/app/actions/partners';
 import type { Partner } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@neup/components/ui/card';
 
 export function OurPartners({ initialPartners = [] }: { initialPartners?: Partner[] }) {
   const [partners, setPartners] = useState<Partner[]>(initialPartners);

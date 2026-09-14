@@ -4,8 +4,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, X, Bot, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { useSiteProfile } from '@/hooks/use-site-profile';
 import { cn } from '@/lib/utils';
 import { CustomizeTrip } from './CustomizeTrip';

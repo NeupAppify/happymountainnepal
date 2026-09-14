@@ -1,15 +1,15 @@
 'use client';
 
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { formatDistanceToNow } from 'date-fns';
 import { AlertCircle, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Link2, Loader2, Search, ShieldQuestion } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Badge } from '@neup/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Input } from '@neup/components/ui/input';
+import { Tabs, TabsList, TabsTrigger } from '@neup/components/ui/tabs';
 import type { ImageReportEntry, LinkReport, LinkStatus, LinkTargetType } from '@/services/links/get-link-report';
 
 interface ManageLinksContentProps {

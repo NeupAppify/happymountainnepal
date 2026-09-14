@@ -13,15 +13,15 @@ import { GearsSection } from '@/components/tour-details/GearsSection';
 import { GuidesSection } from '@/components/tour-details/GuidesSection';
 import Image from 'next/image';
 import { TourNav } from '@/components/tour-details/TourNav';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { FileDown } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 import { exportTourToPdf } from '@/lib/pdf-export';
 import type { Tour, ManagedReview } from '@/lib/types';
 import { useEffect, useMemo } from 'react';
 import { Chatbot } from '@/components/Chatbot';
 import { getTourChatMessage } from '@/lib/chat-messages';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 
 interface TourDetailClientProps {
   tour: Tour;

@@ -3,9 +3,9 @@
 
 import { useState } from 'react';
 import { useFormContext } from 'react-hook-form';
-import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
-import { Card } from '@/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Label } from '@neup/components/ui/label';
+import { Card } from '@neup/components/ui/card';
 import { SmartImage } from '@/components/ui/smart-image';
 import { XCircle, Library, Plus } from 'lucide-react';
 import { MediaLibraryDialog } from './MediaLibraryDialog';

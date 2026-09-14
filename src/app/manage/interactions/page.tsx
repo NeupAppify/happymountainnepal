@@ -1,8 +1,8 @@
 'use client';
 
 import { FormEvent, Suspense, useCallback, useEffect, useMemo, useState, useTransition } from 'react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Link } from "@/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
 import { formatDistanceToNow } from 'date-fns';
 import {
   Activity,
@@ -23,17 +23,17 @@ import { clearUnrealAccountsAction } from '@/app/actions/accounts';
 import { getAllInteractionLogs, getUsersSummary } from '@/lib/db';
 import { classifyUserAgent, normalizeStoredReferrerSource } from '@/lib/log-classification';
 import type { DisplayUser, Log } from '@/lib/types';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { Badge } from '@neup/components/ui/badge';
+import { Button } from '@neup/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Skeleton } from '@/components/ui/skeleton';
+} from '@neup/components/ui/card';
+import { Input } from '@neup/components/ui/input';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useToast } from '@/hooks/use-toast';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
@@ -46,7 +46,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
+} from '@neup/components/ui/alert-dialog';
 
 const DEFAULT_PAGE_SIZE = 20;
 const MIN_PAGE_SIZE = 20;

@@ -2,7 +2,7 @@
 'use client';
 
 import * as React from 'react';
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';

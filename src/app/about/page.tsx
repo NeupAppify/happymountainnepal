@@ -4,7 +4,7 @@ import { TeamMemberCard } from '@/components/TeamMemberCard';
 import Image from 'next/image';
 import { getTeamMembers } from '@/lib/db/team';
 import type { TeamMember } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useState, useEffect } from 'react';
 import { AdminPageControl } from '@/components/admin/AdminPageControl';
 

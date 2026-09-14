@@ -1,5 +1,5 @@
 //to be remade
-import { cn } from "#/core/utils"
+import { cn } from "@neup/core/utils"
 
 function Skeleton({
   className,

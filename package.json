@@ -8,7 +8,7 @@
     "prebuild": "npm run setup",
     "predev": "npm run setup",
 
-    "dev": "next dev --turbopack -p 4277 --experimental-https",
+    "dev": "next dev --turbopack --experimental-https --port 4277",
     "build": "next build",
     "start": "next start -p 4277",
     "lint": "next lint",

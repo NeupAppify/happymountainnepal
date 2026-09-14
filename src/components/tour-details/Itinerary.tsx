@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@neup/components/ui/accordion"
 import type { Tour } from "@/lib/types"
 
 interface ItineraryProps {

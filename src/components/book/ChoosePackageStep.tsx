@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getAllPublishedTours } from '@/lib/db';
 import type { Tour } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { TourCard } from '@/components/TourCard';
 import { CardsGrid } from '../CardsGrid';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 
 interface ChoosePackageStepProps {

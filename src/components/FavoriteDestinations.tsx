@@ -1,13 +1,13 @@
 
 'use client';
 import { useState, useEffect } from 'react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Link } from "@/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
 import Image from 'next/image';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 import { ArrowRight, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Button } from '@neup/components/ui/button';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { Location } from '@/lib/types';
 
 export function FavoriteDestinations({ initialLocations = [] }: { initialLocations?: Location[] }) {

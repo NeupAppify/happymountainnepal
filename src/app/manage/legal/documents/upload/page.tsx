@@ -9,8 +9,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+} from "@neup/components/ui/card";
+import { Button } from "@neup/components/ui/button";
 import { useToast } from '@/hooks/use-toast';
 import {
   Loader2,
@@ -20,7 +20,7 @@ import {
   XCircle,
   Library,
 } from 'lucide-react';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { addLegalDocument, logFileUpload } from '@/lib/db';
 import { MediaLibraryDialog } from '@/components/manage/MediaLibraryDialog';
 import type { ImageWithCaption } from '@/lib/types';

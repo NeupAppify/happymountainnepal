@@ -1,14 +1,14 @@
 
 'use client';
 
-import { Link } from "@/components/ui/link";
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Link } from "@neup/components/ui/link";
+import { Button } from '@neup/components/ui/button';
+import { Card } from '@neup/components/ui/card';
 import { ChevronRight, PlusCircle } from 'lucide-react';
 import { getPartnersAction } from '@/app/actions/partners';
 import type { Partner } from '@/lib/types';
 import { useState, useEffect } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { SmartImage } from '@/components/ui/smart-image';
 import { cn } from '@/lib/utils';
 

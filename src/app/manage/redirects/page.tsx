@@ -11,7 +11,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
+} from '@neup/components/ui/card';
 import {
   Table,
   TableBody,
@@ -19,7 +19,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from '@neup/components/ui/table';
 import {
   Form,
   FormControl,
@@ -27,15 +27,15 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { RadioGroup, RadioGroupItem } from '@neup/components/ui/radio-group';
+import { Button } from '@neup/components/ui/button';
+import { Badge } from '@neup/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2, PlusCircle, Trash2, Info } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Alert, AlertDescription } from '@neup/components/ui/alert';
 import type { Redirect } from '@/lib/types';
 
 const formSchema = z.object({

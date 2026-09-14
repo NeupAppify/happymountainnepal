@@ -3,11 +3,11 @@
 import { useState, useTransition } from 'react';
 import { type GearItem } from '@/lib/types';
 import { createGear, updateGear, deleteGear } from '@/lib/db';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from '@/components/ui/dialog';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Button } from '@neup/components/ui/button';
+import { Input } from '@neup/components/ui/input';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@neup/components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from '@neup/components/ui/dialog';
+import { Checkbox } from '@neup/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2, Plus, Pencil, Trash2, Image as ImageIcon } from 'lucide-react';
 import Image from 'next/image';
@@ -23,7 +23,7 @@ import {
     FormLabel,
     FormMessage,
     FormDescription,
-} from '@/components/ui/form';
+} from '@neup/components/ui/form';
 
 const gearSchema = z.object({
     name: z.string().min(1, "Name is required"),

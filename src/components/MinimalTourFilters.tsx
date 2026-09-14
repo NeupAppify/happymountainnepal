@@ -1,8 +1,8 @@
 
 "use client";
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from "@neup/components/ui/input";
+import { Button } from "@neup/components/ui/button";
 import { X, Search } from "lucide-react";
 import { useRouter, usePathname } from "next/navigation";
 

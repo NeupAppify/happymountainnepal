@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   Form,
   FormControl,
@@ -11,14 +11,14 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { type Tour } from '@/lib/types';
 import { updateTour, logError, validateTourForPublishing } from '@/lib/db';
 import { useTransition, useState, useEffect } from 'react';
 import { Loader2, CheckCircle2, XCircle, Eye, EyeOff, Book, Check } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { RadioGroup, RadioGroupItem } from '@neup/components/ui/radio-group';
 import { usePathname } from 'next/navigation';
 
 const formSchema = z.object({

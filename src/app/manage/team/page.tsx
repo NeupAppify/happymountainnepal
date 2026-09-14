@@ -1,21 +1,21 @@
 
 'use client';
 
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
+} from '@neup/components/ui/card';
 import { PlusCircle, GripVertical, Pencil, Trash2, Users } from 'lucide-react';
 import type { TeamMember, TeamGroup } from '@/lib/types';
 import { useState, useEffect } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Skeleton } from '@neup/components/ui/skeleton';
+import { Input } from '@neup/components/ui/input';
+import { Label } from '@neup/components/ui/label';
 import {
   Dialog,
   DialogContent,
@@ -24,10 +24,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog';
+} from '@neup/components/ui/dialog';
 import { createTeamGroup, updateTeamGroup, deleteTeamGroup, batchUpdateTeamMemberPositions, batchUpdateTeamGroupOrder, getTeamMembers, getTeamGroups } from '@/lib/db';
 import { useToast } from '@/hooks/use-toast';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 import { DeleteTeamMemberDialog } from '@/components/manage/DeleteTeamMemberDialog';
 
 export default function TeamManagementPage() {

@@ -1,20 +1,20 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from "@neup/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
+import { Input } from "@neup/components/ui/input";
+import { Label } from "@neup/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Slider } from "@/components/ui/slider";
+} from "@neup/components/ui/select";
+import { Slider } from "@neup/components/ui/slider";
 import type { Tour } from "@/lib/types";
 import { getInquiryLink } from "@/lib/growth-content";
 

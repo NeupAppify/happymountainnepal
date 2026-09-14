@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from 'react';
 import type { Tour } from '@/lib/types';
 import { useWishlist } from '@/context/WishlistContext';
 import { MinimalTourCard } from './MinimalTourCard';
-import { Skeleton } from '#/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { Heart } from 'lucide-react';
 
 const RECENTLY_VIEWED_KEY = 'happy-mountain-recent-tours';

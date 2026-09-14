@@ -1,10 +1,10 @@
 
 'use client';
 
-import { Sidebar, SidebarMenuButton, SidebarProvider } from "@/components/ui/sidebar";
+import { Sidebar, SidebarMenuButton, SidebarProvider } from "@neup/components/ui/sidebar";
 import { SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenu, SidebarMenuItem } from "@/components/manage/sidebar-compat";
 import { LayoutGrid, Mail, Users, Mountain, ArrowLeft, UsersRound, Package, Handshake, ShieldAlert, PictureInPicture, PenSquare, Star, UserCircle2, Landmark, MessageSquare, LogOut, Layout, ArrowRightLeft, Backpack, CreditCard, ListTodo, MapPin, Link2 } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@neup/components/ui/avatar";
 import { usePathname } from "next/navigation";
 import { AutoHideScrollbar } from "@/components/ui/AutoHideScrollbar";
 

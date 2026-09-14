@@ -7,12 +7,12 @@ import type { FileUpload } from '@/lib/types';
 import { format } from 'date-fns';
 import { SmartImage } from '@/components/ui/smart-image';
 import { FileIcon, ExternalLink, Trash2, Edit2, Check, X, ChevronLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@neup/components/ui/button';
+import { Card, CardContent } from '@neup/components/ui/card';
+import { Input } from '@neup/components/ui/input';
+import { Badge } from '@neup/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 
 const DetailRow = ({ label, value }: { label: string; value: React.ReactNode }) => (
     <div className="flex justify-between items-start py-3 border-b">

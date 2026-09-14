@@ -1,14 +1,14 @@
 
 "use client";
 
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import Image from 'next/image';
-import { Button } from '#/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { useState, useRef, useEffect } from 'react';
-import { Input } from '#/components/ui/input';
+import { Input } from '@neup/components/ui/input';
 import { Search } from 'lucide-react';
-import { Skeleton } from '#/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useSiteProfile } from '@/hooks/use-site-profile';
 import { motion, AnimatePresence } from 'framer-motion';
 

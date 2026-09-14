@@ -2,10 +2,10 @@
 import { notFound } from 'next/navigation';
 import { getLocationBySlug, getLocationById, getChildLocations, getPosts, getAllPackages } from '@/lib/db/sqlite';
 import { TourCard } from '@/components/TourCard';
-import { Button } from '@/components/ui/button';
-import { LinkButton } from "@/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { MapPin, ArrowRight } from 'lucide-react';
 import type { Tour, BlogPost } from '@/lib/types';
 import { BlogCard } from '@/components/BlogCard';

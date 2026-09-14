@@ -1,13 +1,13 @@
 'use client';
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
+} from '@neup/components/ui/card';
 import {
   Table,
   TableBody,
@@ -15,12 +15,12 @@ import {
   TableHeader,
   TableRow,
   TableCell,
-} from '@/components/ui/table';
+} from '@neup/components/ui/table';
 import { PlusCircle, Star } from 'lucide-react';
 import { ReviewTableRow } from '@/components/manage/ReviewTableRow';
 import type { ManagedReview } from '@/lib/types';
 import { useState, useEffect } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { getAllReviews } from '@/lib/db/reviews';
 
 export default function ReviewsListPage() {

@@ -1,8 +1,8 @@
 
 'use client';
 
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import { ArrowLeft, ArrowRight, Loader2, CheckCircle2, XCircle } from 'lucide-react';
 import type { Tour } from '@/lib/types';
 import { cn } from '@/lib/utils';

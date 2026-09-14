@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import Image from "next/image";
 import type { Tour } from "@/lib/types";
 import { cn } from "@/lib/utils";

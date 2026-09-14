@@ -1,12 +1,12 @@
 'use client';
 
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import type { ManagedReview } from '@/lib/types';
-import { Button } from '#/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   TableCell,
   TableRow,
-} from '#/components/ui/table';
+} from '@neup/components/ui/table';
 import { MoreHorizontal, Trash2, ExternalLink } from 'lucide-react';
 import {
   DropdownMenu,
@@ -14,9 +14,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
-} from '#/components/ui/dropdown-menu';
+} from '@neup/components/ui/dropdown-menu';
 import { DeleteReviewDialog } from '@/components/manage/DeleteReviewDialog';
-import { Badge } from '#/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 import { format } from 'date-fns';
 import { ReviewStars } from '../ReviewStars';
 import { Timestamp } from '@/lib/timestamp'; // Import Timestamp

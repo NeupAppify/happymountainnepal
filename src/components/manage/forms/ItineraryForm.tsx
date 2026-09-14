@@ -2,17 +2,17 @@
 'use client';
 
 import { useFormContext, useFieldArray } from 'react-hook-form';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Card, CardContent } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Textarea } from '@neup/components/ui/textarea';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { type Tour } from '@/lib/types';
 import { PlusCircle, Trash2 } from 'lucide-react';
 

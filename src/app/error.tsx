@@ -4,7 +4,7 @@
 import { useEffect } from 'react'
 import { logError } from '@/lib/db'
 import { usePathname } from 'next/navigation'
-import { Button } from '@/components/ui/button'
+import { Button } from '@neup/components/ui/button'
 
 export default function GlobalError({
   error,

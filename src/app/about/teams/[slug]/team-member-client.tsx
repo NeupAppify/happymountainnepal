@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import type { TeamMember } from '@/lib/types';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 
 interface TeamMemberClientProps {
   member: TeamMember;

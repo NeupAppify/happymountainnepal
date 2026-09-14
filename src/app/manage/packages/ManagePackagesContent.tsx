@@ -1,14 +1,14 @@
 'use client';
-import { Link } from "@/components/ui/link";
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Link } from "@neup/components/ui/link";
+import { Button } from '@neup/components/ui/button';
+import { Input } from '@neup/components/ui/input';
 import { PlusCircle, Search, ChevronRight, ChevronLeft } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
+import { Card, CardContent } from '@neup/components/ui/card';
+import { Separator } from '@neup/components/ui/separator';
 import { PackageManagementCard } from '@/components/manage/PackageTableRow';
 import type { Tour } from '@/lib/types';
 import { useState, useEffect } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useDebounce } from '@/hooks/use-debounce';
 import { useRouter, useSearchParams } from 'next/navigation';
 

@@ -10,7 +10,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "@neup/components/ui/alert-dialog";
 import { deleteReview, logError } from "@/lib/db";
 import type { ManagedReview } from "@/lib/types";
 import { useTransition } from "react";

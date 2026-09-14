@@ -3,8 +3,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { Input } from '@neup/components/ui/input';
+import { Button } from '@neup/components/ui/button';
 import { Search as SearchIcon, Loader2 } from 'lucide-react';
 
 interface SearchFormProps {

@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { LinkButton } from "@/components/ui/link-button";
-import { Link } from "@/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import {
@@ -14,8 +14,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@neup/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@neup/components/ui/sheet";
 import { Menu, Mountain, Search, User } from "lucide-react";
 // Removed import { getDestinations } from "@/lib/db";
 import type { Destination } from "@/lib/types";

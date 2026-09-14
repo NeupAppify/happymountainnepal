@@ -4,7 +4,7 @@
 import { useForm, FormProvider } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
     Form,
     FormControl,
@@ -13,16 +13,16 @@ import {
     FormLabel,
     FormMessage,
     FormDescription,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Textarea } from '@neup/components/ui/textarea';
+import { Checkbox } from '@neup/components/ui/checkbox';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { Loader2, Save, ArrowLeft } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import { MediaPicker } from '../MediaPicker';
 import { Location } from '@/lib/types';
 import {
@@ -31,7 +31,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select';
+} from '@neup/components/ui/select';
 
 const formSchema = z.object({
     name: z.string().min(2, "Name must be at least 2 characters."),

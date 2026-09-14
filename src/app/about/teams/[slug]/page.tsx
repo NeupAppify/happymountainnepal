@@ -2,7 +2,7 @@
 import { getTeamMemberBySlug } from '@/lib/db';
 import TeamMemberClient from './team-member-client';
 import { notFound } from 'next/navigation';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { AdminPageControl } from '@/components/admin/AdminPageControl';
 
 type TeamMemberPageProps = {

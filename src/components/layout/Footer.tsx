@@ -1,6 +1,6 @@
 
 'use client';
-import { Link } from '@/components/ui/link';
+import { Link } from '@neup/components/ui/link';
 import { Mail, Phone, MapPin, Twitter, Instagram, Facebook } from 'lucide-react';
 import { useSiteProfile } from '@/hooks/use-site-profile';
 import Image from 'next/image';

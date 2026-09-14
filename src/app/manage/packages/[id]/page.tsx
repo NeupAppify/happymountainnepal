@@ -1,16 +1,16 @@
 
 import { getTourById } from '@/lib/db';
 import { notFound } from 'next/navigation';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@neup/components/ui/card';
+import { Badge } from '@neup/components/ui/badge';
 import Image from 'next/image';
 import { KeyFacts } from '@/components/tour-details/KeyFacts';
 import { Itinerary } from '@/components/tour-details/Itinerary';
 import { InclusionsExclusions } from '@/components/tour-details/InclusionsExclusions';
 import { FaqSection } from '@/components/tour-details/FaqSection';
 import { AdditionalInfoSection } from '@/components/tour-details/AdditionalInfoSection';
-import { Button } from '@/components/ui/button';
-import { LinkButton } from "@/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
 import { PenSquare } from 'lucide-react';
 import { format } from 'date-fns';
 import { Timestamp } from '@/lib/timestamp';

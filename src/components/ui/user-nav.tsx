@@ -1,8 +1,8 @@
 'use client';
 
-import { Link } from "@/components/ui/link";
-import { Userbar } from '#/components/element/userbar';
-import { useSession } from '#/core/providers/session';
+import { Link } from "@neup/components/ui/link";
+import { Userbar } from '@neup/components/element/userbar';
+import { useSession } from '@neup/core/providers/session';
 
 export function UserNav() {
   const { user } = useSession();

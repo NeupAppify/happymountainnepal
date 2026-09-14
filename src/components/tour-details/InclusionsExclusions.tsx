@@ -1,6 +1,6 @@
 
 import type { Tour } from '@/lib/types';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { CheckCircle, XCircle } from 'lucide-react';
 
 interface InclusionsExclusionsProps {

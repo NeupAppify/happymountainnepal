@@ -11,7 +11,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "@neup/components/ui/alert-dialog";
 import { deleteTour, logError } from "@/lib/db";
 import type { Tour } from "@/lib/types";
 import { useTransition } from "react";

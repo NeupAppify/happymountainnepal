@@ -1,8 +1,8 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@neup/components/ui/card";
+import { Input } from "@neup/components/ui/input";
+import { Button } from "@neup/components/ui/button";
+import { Label } from "@neup/components/ui/label";
 import { Lock } from "lucide-react";
 
 export default async function LegalGatePage({

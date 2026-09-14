@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { useNProgress } from '@/hooks/useNProgress';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 
 /**
  * Example component demonstrating nprogress usage

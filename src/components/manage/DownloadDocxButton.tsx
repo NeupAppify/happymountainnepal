@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { FileText } from 'lucide-react';
 import { exportTourToDocx } from '@/lib/docx-export';
 import type { Tour } from '@/lib/types';

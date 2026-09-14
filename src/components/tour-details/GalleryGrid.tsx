@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { getFileNameFromUrl } from '@/lib/utils';
 import type { ImageWithCaption } from '@/lib/types';
 import { User } from 'lucide-react';

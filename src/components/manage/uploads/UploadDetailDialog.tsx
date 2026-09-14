@@ -8,15 +8,15 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-} from '@/components/ui/dialog';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
+} from '@neup/components/ui/dialog';
+import { Badge } from '@neup/components/ui/badge';
+import { Input } from '@neup/components/ui/input';
 import type { FileUpload } from '@/lib/types';
 import { format } from 'date-fns';
 import { SmartImage } from '@/components/ui/smart-image';
 import { FileIcon, ExternalLink, Trash2, Edit2, Check, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { updateFileUpload, deleteFileUpload } from '@/lib/db';
 import { useToast } from '@/hooks/use-toast';
 

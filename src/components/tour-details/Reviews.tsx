@@ -1,14 +1,14 @@
 'use client';
 import type { ManagedReview } from '@/lib/types';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 import { ReviewStars } from '@/components/ReviewStars';
 import { Timestamp } from '@/lib/timestamp';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { Loader2, ExternalLink } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 import { format } from 'date-fns';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { useState } from 'react';
 
 interface ReviewsProps {

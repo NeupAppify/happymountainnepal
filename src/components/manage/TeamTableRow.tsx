@@ -1,22 +1,22 @@
 
 'use client';
 
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import type { TeamMember } from '@/lib/types';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   TableCell,
   TableRow,
-} from '@/components/ui/table';
+} from '@neup/components/ui/table';
 import { MoreHorizontal, Trash2 } from 'lucide-react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
-} from '@/components/ui/dropdown-menu';
+} from '@neup/components/ui/dropdown-menu';
 import { DeleteTeamMemberDialog } from '@/components/manage/DeleteTeamMemberDialog';
 
 interface TeamTableRowProps {

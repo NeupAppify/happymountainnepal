@@ -2,15 +2,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { LinkButton } from '@/components/ui/link-button';
-import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@neup/components/ui/dialog';
+import { LinkButton } from '@neup/components/ui/link-button';
+import { Button } from '@neup/components/ui/button';
 import { Upload, X, Check, Save, Settings2 } from 'lucide-react';
 import { useSiteProfile } from '@/hooks/use-site-profile';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
-import { Separator } from '@/components/ui/separator';
+import { Input } from '@neup/components/ui/input';
+import { Label } from '@neup/components/ui/label';
+import { Switch } from '@neup/components/ui/switch';
+import { Separator } from '@neup/components/ui/separator';
 import imageCompression from 'browser-image-compression';
 
 interface UploadDialogProps {

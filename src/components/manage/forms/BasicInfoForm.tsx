@@ -3,7 +3,7 @@
 
 import { useFormContext } from 'react-hook-form';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   Form,
   FormControl,
@@ -11,15 +11,15 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Card, CardContent } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Textarea } from '@neup/components/ui/textarea';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { type Tour } from '@/lib/types';
 import { checkSlugAvailability } from '@/lib/db';
 import { useState, useEffect } from 'react';
 import { Loader2, CheckCircle2, XCircle, MoreHorizontal } from 'lucide-react';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@neup/components/ui/select';
 import { slugify } from '@/lib/utils';
 import { useDebounce } from '@/hooks/use-debounce';
 import { SimpleRichTextEditor } from '@/components/ui/SimpleRichTextEditor';

@@ -1,9 +1,9 @@
 
 'use client';
 
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import type { Tour } from '@/lib/types';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { MoreHorizontal, Trash2, FileText, FileDown } from 'lucide-react';
 import { exportTourToDocx } from '@/lib/docx-export';
 import {
@@ -12,10 +12,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
-} from '@/components/ui/dropdown-menu';
+} from '@neup/components/ui/dropdown-menu';
 import { DeletePackageDialog } from '@/components/manage/DeletePackageDialog';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@neup/components/ui/badge';
+import { Card, CardContent } from '@neup/components/ui/card';
 import Image from 'next/image';
 
 interface PackageTableRowProps {

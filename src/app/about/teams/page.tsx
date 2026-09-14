@@ -2,10 +2,10 @@
 'use client';
 
 import { TeamMemberCard } from '@/components/TeamMemberCard';
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import { getTeamMembers, getTeamGroups } from '@/lib/db/team';
 import type { TeamMember, TeamGroup } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useState, useEffect } from 'react';
 
 export default function TeamsPage() {

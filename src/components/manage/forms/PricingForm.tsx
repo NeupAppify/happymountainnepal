@@ -3,7 +3,7 @@
 import { useForm, useFieldArray, FormProvider } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import {
   Form,
   FormControl,
@@ -11,19 +11,19 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
+} from '@neup/components/ui/form';
+import { Input } from '@neup/components/ui/input';
+import { Card, CardContent } from '@neup/components/ui/card';
 import { type Tour } from '@/lib/types';
 import { updateTour, logError } from '@/lib/db';
 import { useTransition } from 'react';
 import { Loader2, PlusCircle, Trash2, CalendarIcon } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Calendar } from '@/components/ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '@neup/components/ui/popover';
+import { Calendar } from '@neup/components/ui/calendar';
 import { cn } from '@/lib/utils';
 import { format } from 'date-fns';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Checkbox } from '@neup/components/ui/checkbox';
 import { Timestamp } from '@/lib/timestamp';
 import { usePathname } from 'next/navigation';
 

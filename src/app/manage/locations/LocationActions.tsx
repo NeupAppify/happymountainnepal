@@ -1,9 +1,9 @@
 
 'use client';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { Edit, Trash2 } from 'lucide-react';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { useRouter } from 'next/navigation';
 import { useTransition } from 'react';
 import { useToast } from '@/hooks/use-toast';
@@ -18,7 +18,7 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "@neup/components/ui/alert-dialog";
 
 interface LocationActionsProps {
     location: Location;

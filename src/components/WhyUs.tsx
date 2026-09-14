@@ -1,6 +1,6 @@
 'use client';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
+import { Skeleton } from "@neup/components/ui/skeleton";
 import { useSiteProfile } from "@/hooks/use-site-profile";
 import Image from "next/image";
 import type { SiteProfile } from "@/lib/types";

@@ -1,9 +1,9 @@
 'use client';
 import type { ManagedReview } from '@/lib/types'; // Changed from Review
-import { Card, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent } from '@neup/components/ui/card';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 import { ReviewStars } from '@/components/ReviewStars';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useState, useEffect } from 'react';
 import { format } from 'date-fns'; // Import format from date-fns
 import { getAllReviews } from '@/lib/db/reviews';

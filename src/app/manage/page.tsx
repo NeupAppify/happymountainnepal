@@ -1,10 +1,10 @@
 
 
 import InquiriesList from "./InquiriesList";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@neup/components/ui/avatar";
+import { Input } from "@neup/components/ui/input";
 import { Search } from "lucide-react";
 
 export default function ManageDashboardPage() {

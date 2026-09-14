@@ -11,7 +11,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "@neup/components/ui/alert-dialog";
 import { deletePartner, logError } from "@/lib/db";
 import type { Partner } from "@/lib/types";
 import { useTransition } from "react";

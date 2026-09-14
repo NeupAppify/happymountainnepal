@@ -6,13 +6,13 @@ import { useRouter } from 'next/navigation';
 import { getLegalDocumentById, updateLegalDocument, logFileUpload } from '@/lib/db';
 import type { ImageWithCaption, LegalDocument } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@neup/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Input } from '@neup/components/ui/input';
+import { Textarea } from '@neup/components/ui/textarea';
+import { Label } from '@neup/components/ui/label';
 import { Loader2, ArrowLeft, Save, Upload as UploadIcon, FileText, Library } from 'lucide-react';
 import { MediaLibraryDialog } from '@/components/manage/MediaLibraryDialog';
 

@@ -3,11 +3,11 @@
 import { useWishlist } from '@/context/WishlistContext';
 import { TourCard } from '@/components/TourCard';
 import { Heart } from 'lucide-react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import { useEffect, useState } from 'react';
 import type { Tour } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 
 export default function WishlistPage() {
   const { wishlist } = useWishlist();

@@ -3,7 +3,7 @@ import { getLegalDocuments, getLegalSettings } from '@/lib/db';
 import type { LegalDocument } from '@/lib/types';
 import { FileText } from 'lucide-react';
 import { cookies, headers } from 'next/headers';
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import { redirect } from 'next/navigation';
 import { DocumentViewer as DocumentCard } from './components/document-card';
 import { UrlCleaner } from './components/url-cleaner';

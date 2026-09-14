@@ -1,13 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Link } from "@/components/ui/link";
+import { Link } from "@neup/components/ui/link";
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
+import { Card, CardContent } from '@neup/components/ui/card';
+import { Input } from '@neup/components/ui/input';
 import { Search, MapPin, Loader2 } from 'lucide-react';
 import type { Location } from '@/lib/types';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 
 export function LocationsClient({ initialLocations }: { initialLocations: Location[] }) {
     const [locations] = useState<Location[]>(initialLocations);

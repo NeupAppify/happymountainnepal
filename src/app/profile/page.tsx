@@ -3,13 +3,13 @@
 import { useWishlist } from '@/context/WishlistContext';
 import { TourCard } from '@/components/TourCard';
 import { Heart, LogOut } from 'lucide-react';
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 import { useEffect, useState } from 'react';
 import type { Tour, Account } from '@/lib/types';
 import { useRouter } from 'next/navigation';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { getCurrentAccountAction, logoutAccountAction } from '@/app/actions/accounts';
 
 export default function ProfilePage() {

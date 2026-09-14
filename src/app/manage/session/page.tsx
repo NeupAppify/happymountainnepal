@@ -1,7 +1,7 @@
 'use client';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Alert, AlertDescription, AlertTitle } from '@neup/components/ui/alert';
 import { Info, Cookie } from 'lucide-react';
 
 export default function SessionManagementPage() {

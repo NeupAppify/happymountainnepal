@@ -1,4 +1,4 @@
-import { LinkButton } from "@/components/ui/link-button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { Frown } from 'lucide-react';
 
 export default function NotFoundPage() {

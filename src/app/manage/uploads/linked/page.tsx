@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Label } from '@/components/ui/label';
+import { Button } from '@neup/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Label } from '@neup/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { ChevronLeft, Link as LinkIcon, Loader2 } from 'lucide-react';
-import { Link } from "@/components/ui/link";
-import { LinkButton } from "@/components/ui/link-button";
+import { Link } from "@neup/components/ui/link";
+import { LinkButton } from "@neup/components/ui/link-button";
 
 export default function LinkedUploadPage() {
     const router = useRouter();

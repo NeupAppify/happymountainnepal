@@ -1,20 +1,20 @@
 
 'use client';
-import { Link } from '@/components/ui/link';
-import { Button } from '@/components/ui/button';
+import { Link } from '@neup/components/ui/link';
+import { Button } from '@neup/components/ui/button';
 import {
     Card,
     CardContent,
     CardHeader,
     CardTitle
-} from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
-import { Input } from '@/components/ui/input';
+} from '@neup/components/ui/card';
+import { Separator } from '@neup/components/ui/separator';
+import { Input } from '@neup/components/ui/input';
 import { PlusCircle, ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { BlogManagementCard } from '@/components/manage/BlogTableRow';
 import type { BlogPost } from '@/lib/types';
 import { useState, useEffect } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useDebounce } from '@/hooks/use-debounce';
 

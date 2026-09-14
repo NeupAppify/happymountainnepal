@@ -1,10 +1,10 @@
 'use client';
 
 import { TourCard } from './TourCard';
-import { LinkButton } from "@/components/ui/link-button";
-import { Button } from '@/components/ui/button';
+import { LinkButton } from "@neup/components/ui/link-button";
+import { Button } from '@neup/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@neup/components/ui/skeleton';
 import type { Tour } from '@/lib/types';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';

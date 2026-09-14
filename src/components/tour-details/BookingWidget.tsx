@@ -3,17 +3,17 @@
 
 import { useState, useEffect } from 'react';
 import type { Tour } from '@/lib/types';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Calendar } from '@/components/ui/calendar';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Button } from '@neup/components/ui/button';
+import { Calendar } from '@neup/components/ui/calendar';
+import { Badge } from '@neup/components/ui/badge';
 import { format } from 'date-fns';
 import { useToast } from '@/hooks/use-toast';
 import { Heart } from 'lucide-react';
 import { useWishlist } from '@/context/WishlistContext';
 import { cn } from '@/lib/utils';
 import { Timestamp } from '@/lib/timestamp';
-import { LinkButton } from "@/components/ui/link-button"; // Import LinkButton
+import { LinkButton } from "@neup/components/ui/link-button"; // Import LinkButton
 
 interface BookingWidgetProps {
   tour: Tour;

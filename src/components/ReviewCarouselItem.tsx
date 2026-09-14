@@ -1,10 +1,10 @@
 'use client';
 
 import type { ManagedReview } from '@/lib/types';
-import { Card, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent } from '@neup/components/ui/card';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 import { ReviewStars } from '@/components/ReviewStars';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 
