@@ -66,7 +66,12 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      className="scroll-smooth"
+    >
       <head>
         <script
           type="application/ld+json"
