@@ -173,7 +173,12 @@ export function HeroSection({ initialProfile }: { initialProfile?: any }) {
                 <LinkButton href="/tours" size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" variant="solid">
                     Explore Tours
                   </LinkButton>
-                <Button size="lg" variant="tinted" onClick={handleSearchClick}>
+                <Button
+                  size="lg"
+                  variant="solid"
+                  onClick={handleSearchClick}
+                  className="bg-white text-primary hover:bg-white/90"
+                >
                   <Search className="h-5 w-5 mr-2" />
                   Search for Experience
                 </Button>
