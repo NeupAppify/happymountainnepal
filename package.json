@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "setup": "npm run prepare && bash .neup/setup/index.sh",
+    "setup": "npm run prepare && chmod +x .neup/setup/index.sh && bash .neup/setup/index.sh --lang nextjs",
     "prepare": "mkdir -p .neup && if [ -d .neup/setup/.git ]; then git -C .neup/setup pull --ff-only origin main; else git clone --depth 1 --single-branch --branch main https://github.com/neupgroup/guidelines.git .neup/setup; fi",
-    "postinstall": "npm run prepare",
-    "prebuild": "npm run prepare",
-    "predev": "npm run prepare",
+    "prebuild": "npm run setup",
+    "predev": "npm run setup",
 
     "dev": "sudo next dev --turbopack --experimental-https --hostname dev.happymountainnepal.com --port 443",
     "build": "next build",
