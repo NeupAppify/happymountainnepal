@@ -21,7 +21,7 @@
 /build
 
 # base folder
-/base/
+/base/sources/*
 
 # misc
 .DS_Store
