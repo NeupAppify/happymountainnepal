@@ -12,7 +12,7 @@ interface NavigationData {
 
 export async function getNavigationData(): Promise<NavigationData> {
     try {
-        return await readBaseFile<NavigationData>('navigation-components.json');
+        return await readBaseFile<NavigationData>('custom/navigation.json');
     } catch (error) {
         console.error('Error loading navigation data:', error);
         // Return default structure if file doesn't exist

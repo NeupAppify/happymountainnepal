@@ -13,8 +13,8 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Write to navigation-components.json in @base storage
-        await writeBaseFile('navigation-components.json', data);
+        // Write to custom/navigation.json in @base storage
+        await writeBaseFile('custom/navigation.json', data);
 
         return NextResponse.json({
             success: true,
@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
     try {
-        const data = await readBaseFile('navigation-components.json');
+        const data = await readBaseFile('custom/navigation.json');
         return NextResponse.json(data);
     } catch (error) {
         console.error('Error reading navigation data:', error);

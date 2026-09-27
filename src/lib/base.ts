@@ -50,7 +50,7 @@ export async function baseFileExists(file: string): Promise<boolean> {
 // Functions to get configuration data (Node.js runtime only)
 // These use fs to read from /@base
 export async function getNavigationComponentsData() {
-    return readBaseFile('navigation-components.json');
+    return readBaseFile('custom/navigation.json');
 }
 
 // getRedirectsData is no longer needed as redirects are fetched from an API

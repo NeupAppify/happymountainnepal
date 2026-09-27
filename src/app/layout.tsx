@@ -47,7 +47,7 @@ export default async function RootLayout({
   const profile = await getSiteProfileAction();
   let navigationData = null;
   try {
-    navigationData = await readBaseFile('navigation-components.json');
+    navigationData = await readBaseFile('custom/navigation.json');
   } catch (e) {
     console.error("Failed to load navigation data in layout", e);
   }
