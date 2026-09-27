@@ -1,5 +1,6 @@
 {
-    "name": "happymountainnepal",
-    "description": "Happy Mountain Nepal",
-    "logo": "https://raw.githubusercontent.com/neupgroup/happymountainnepal/main/public/logo.png"
+    "name": "Good Deal",
+    "version": "1.0.0.00",
+    "poweredBy": "neup.sites",
+    "id": "19ab1a1c-60be-4632-9023-09ac5786054b"
 }
