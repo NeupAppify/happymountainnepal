@@ -1,6 +1,6 @@
 
 import { match } from 'path-to-regexp';
-import redirects from '@/../base/core/redirects.json';
+import redirects from '@base/core/redirects.json';
 
 interface RedirectRule {
     id: string;

@@ -1,7 +1,7 @@
 
 // src/lib/redirect-matcher.ts - This file is for Node.js runtime only.
 import { match } from 'path-to-regexp';
-import redirects from '@/../base/core/redirects.json';
+import redirects from '@base/core/redirects.json';
 
 // Note: RedirectRule now uses 'from' and 'to' to match the API response
 export interface RedirectRule {

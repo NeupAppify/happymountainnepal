@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { getManagerData } from '@/lib/base-edge';
 import { classifyUserAgent, getBotIdentifier } from '@/lib/log-classification';
 import { readBaseJson } from '@/lib/reader';
-import redirects from '@/../base/core/redirects.json';
-// import appInfo from '@/../base/appinfo.json';
+import redirects from '@base/core/redirects.json';
+// import appInfo from '@base/appinfo.json';
 
 const COOKIE_NAME = 'temp_account';
 const PUBLIC_FILE = /\.(.*)$/;

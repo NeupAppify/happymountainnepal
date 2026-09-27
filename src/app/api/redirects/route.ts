@@ -1,7 +1,7 @@
 
 'use server';
 import { NextResponse } from 'next/server';
-import redirects from '@/../base/core/redirects.json';
+import redirects from '@base/core/redirects.json';
 
 // GET - Fetch all redirects from local file
 export async function GET() {

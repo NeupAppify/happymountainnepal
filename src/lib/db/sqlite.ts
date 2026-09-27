@@ -5,7 +5,7 @@ import type { Tour, ManagedReview, OnSiteReview, OffSiteReview, BlogPost } from 
 import { v4 as uuidv4 } from 'uuid';
 
 // Ensure data directory exists
-const dataDir = path.join(process.cwd(), 'base', 'sources');
+const dataDir = path.join(process.cwd(), '@base', 'sources');
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
 }

@@ -7,7 +7,7 @@ import path from 'path';
 
 // Paths for different file types
 const SRC_BASE_PATH = path.join(process.cwd(), 'src', 'base'); // For credentials
-const BASE_PATH = path.join(process.cwd(), 'base'); // For configuration
+const BASE_PATH = path.join(process.cwd(), '@base'); // For configuration
 
 // Read/write functions for credential files (in /src/base)
 export async function readCredentialFile<T>(file: string): Promise<T> {
@@ -23,7 +23,7 @@ export async function writeCredentialFile(file: string, data: any): Promise<void
     await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
 }
 
-// Read/write functions for configuration files (in /base)
+// Read/write functions for configuration files (in /@base)
 export async function readBaseFile<T>(file: string): Promise<T> {
     const filePath = path.join(BASE_PATH, file);
     const data = await fs.readFile(filePath, 'utf-8');
@@ -48,7 +48,7 @@ export async function baseFileExists(file: string): Promise<boolean> {
 }
 
 // Functions to get configuration data (Node.js runtime only)
-// These use fs to read from /base
+// These use fs to read from /@base
 export async function getNavigationComponentsData() {
     return readBaseFile('navigation-components.json');
 }

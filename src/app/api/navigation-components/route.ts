@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // Write to navigation-components.json in base storage
+        // Write to navigation-components.json in @base storage
         await writeBaseFile('navigation-components.json', data);
 
         return NextResponse.json({

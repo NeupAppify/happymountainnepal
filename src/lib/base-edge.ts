@@ -1,5 +1,5 @@
 // Edge runtime compatible version - NO Node.js modules
-import managers from '@/../base/manager.json';
+import managers from "@base/manager.json";
 
 interface Manager {
     username: string;
