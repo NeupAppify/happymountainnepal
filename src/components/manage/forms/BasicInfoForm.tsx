@@ -169,12 +169,12 @@ export function BasicInfoForm({ tour }: BasicInfoFormProps) {
                   <SimpleRichTextEditor
                     value={field.value}
                     onChange={field.onChange}
-                    placeholder="Write a detailed description of the package. You can use bold, italic, and underline formatting..."
+                    placeholder="Write a detailed description of the package. You can use formatting and add links..."
                     height="300px"
                   />
                 </FormControl>
                 <p className="text-xs text-muted-foreground">
-                  Line breaks and basic formatting (bold, italic, underline) are allowed.
+                  Line breaks, basic formatting, and links are allowed.
                 </p>
                 <FormMessage />
               </FormItem>

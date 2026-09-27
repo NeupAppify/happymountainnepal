@@ -28,19 +28,19 @@ export function SimpleRichTextEditor({
         setMounted(true);
     }, []);
 
-    // Simple toolbar with only bold, italic, underline
+    // Keep the compact toolbar while allowing inline links.
     const modules = useMemo(() => ({
         toolbar: [
-            ['bold', 'italic', 'underline'],
+            ['bold', 'italic', 'underline', 'link'],
         ],
         clipboard: {
             matchVisual: false,
         },
     }), []);
 
-    // Only allow basic text formatting - no headings, lists, etc.
+    // Only allow basic inline formatting - no headings, lists, etc.
     const formats = [
-        'bold', 'italic', 'underline'
+        'bold', 'italic', 'underline', 'link'
     ];
 
     if (!mounted) {
